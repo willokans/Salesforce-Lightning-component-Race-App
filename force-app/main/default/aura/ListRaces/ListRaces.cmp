@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <!-- Component attributes -->
+    <aura:attribute name="races" type="String[]" default="['Race 1', 'Race 2', 'Race 3']" />
+
+        <div>
+            <aura:iteration items="{!v.races}" var="race">
+                <ui:outputText value="{!race}" /><br/>
+            </aura:iteration>
+        </div>
+</aura:component>
